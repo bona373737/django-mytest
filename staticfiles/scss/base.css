@@ -1,0 +1,9 @@
+body { box-sizing: border-box; }
+
+#gnv { width: 100%; height: 70px; background-color: #5cc2d0; }
+
+#gnv #log-feg { width: 300px; }
+
+#gnv #log-feg img { width: 300px; }
+
+/*# sourceMappingURL=base.css.map */
