@@ -1,17 +1,40 @@
 {% load static %}
+<script defer>
+    
+</script>
+
 <section id="gnv">
     <div id="logo-feg">
-        <!-- <img src="{% static 'img/logo_feg.png' %}" alt="loge-feg"> -->
+        <a href="{% url 'home' %}">
+            <img src="{% static 'img/logo_feg.png' %}" alt="loge-feg">
+        </a>
     </div>
     <nav>
-        <ul>
-            <li>메뉴1</li>
-            <li>메뉴2</li>
-            <li>메뉴3</li>
+        <ul class="menu-wrap">
+            <li><a class="nav-menu" href="{% url 'home' %}">메뉴1</a></li>
+            <li><a class="nav-menu" href="{% url 'home' %}">메뉴2</a></li>
+            <li><a class="nav-menu" href="{% url 'home' %}">메뉴3</a></li>
         </ul>
     </nav>
     <div id="account-group">
-        <div>signin</div>
-        <div>signup</div>
+        <div><a class="nav-menu" href="{% url 'signin' %}">signin</a></div>
+        <div><a class="nav-menu" href="{% url 'signup' %}">signup</a></div>
     </div>
+</section>
+<section id="gnv-mobile">
+    모바일버전_nav
+    <!-- <div id="logo-feg">
+        <img src="{% static 'img/logo_feg.png' %}" alt="loge-feg">
+    </div>
+    <nav>
+        <ul class="menu-wrap">
+            <li><a class="nav-menu" href="{% url 'signin' %}">메뉴1</a></li>
+            <li><a class="nav-menu" href="{% url 'signin' %}">메뉴2</a></li>
+            <li><a class="nav-menu" href="{% url 'signin' %}">메뉴3</a></li>
+        </ul>
+    </nav>
+    <div id="account-group">
+        <div><a class="nav-menu" href="{% url 'signin' %}">signin</a></div>
+        <div><a class="nav-menu" href="{% url 'signup' %}">signup</a></div>
+    </div> -->
 </section>

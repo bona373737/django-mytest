@@ -1,4 +1,5 @@
 <!-- home.html in project level templates folder -->
+{% load static %}
 {% load sass_tags %}
 
 <!DOCTYPE html>
@@ -6,15 +7,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/img/favicon.ico" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- css style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
     <link rel="stylesheet" href="{% sass_src 'scss/base.scss' %}" />
+    <link rel="stylesheet" href="{% sass_src 'scss/responsive.scss' %}" />
 
-    <title>{% block title %} {% endblock %}</title>
+    <title>SIMFULLO</title>
 </head>
-<body>
-    {% include 'nav.html' %}
-     
+<body> 
+    {% if not request.path == "/accounts/signin/" or request.path == "/accounts/signup/" %}
+        {% include 'nav.html' %}
+    {% endif %}
+
     {% block content %}
     {% endblock content %}
     

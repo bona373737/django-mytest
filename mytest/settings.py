@@ -12,10 +12,11 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os,json
+import sys 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sass_processor',
-    'apps.accounts'
+    'apps.accounts',
+    'apps.home',
 ]
 
 MIDDLEWARE = [
@@ -132,6 +134,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     os.path.join(BASE_DIR,'apps','accounts','static'),
+    os.path.join(BASE_DIR,'apps','home','static'),
 ]
 
 # SCSS 설정
