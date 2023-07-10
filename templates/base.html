@@ -20,7 +20,8 @@
     <title>SIMFULLO</title>
 </head>
 <body> 
-    {% if not request.path == "/accounts/signin/" or request.path == "/accounts/signup/" %}
+    {% if request.path == "/accounts/signin/" or request.path == "/accounts/signup/" %}
+    {% else %} 
         {% include 'nav.html' %}
     {% endif %}
 

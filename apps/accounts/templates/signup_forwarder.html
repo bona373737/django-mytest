@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>signup</h1>
+    <form>
+        <div class="signup-input-wrap">
+            <label for="userid">ID</label>
+            <input type="text" name="userid" id="userid">
+        </div>
+        <div class="signup-input-wrap">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="signup-input-wrap">
+            <label for="username">Name</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <button type="submit">signup</button>
+    </form>
+{% endblock content %}
