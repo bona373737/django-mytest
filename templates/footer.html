@@ -1,3 +1,19 @@
-<footer id="footer">
-    <p>Copyright © 2023  mywebsite.com</p>
+{% load static %}
+
+<footer>
+    <div class="footer-content">
+        <div>   
+            <img src="{% static 'img/GLS-logo.png' %}" alt="GLS logo">
+            <div>
+                <p>주소 : 인천광역시 서해대로 210번길 45 301호</p>
+                <p>대표전화 : 02 – 3775 – 1180 팩스 : 02 – 3775 – 1181</p>
+            </div>
+            <p>© Copyright 2019 <span>GLS</span>Co.,Ltd. All Rights Reserved.</p>
+        </div>
+        <div>
+            <img src="{% static 'img/instagram.svg' %}" alt="">
+            <img src="{% static 'img/facebook.svg' %}" alt="">
+            <img src="{% static 'img/youtube.svg' %}" alt="">
+        </div>
+    </div>
 </footer>
