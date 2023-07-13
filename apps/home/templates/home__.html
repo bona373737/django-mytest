@@ -5,7 +5,42 @@
 {% block content %}
 <link rel="stylesheet" href="{% sass_src 'scss/home.scss' %}" />
 <script defer src="{% static 'js/home.js' %}"></script>
-<script defer src="{% static 'js/components/service.js' %}"></script>
+<!-- <script src="{% static 'components/business.js' %}"></script> -->
+<script>
+    class businessArticle extends HTMLElement {
+
+    connectedCallback() {
+    let src = this.getAttribute('src');
+    let alt = this.getAttribute('alt');
+    let title = this.dataset.title;
+    let subTitle = this.dataset.subTitle;
+    let desc = this.dataset.desc;
+
+    let article = document.createElement('article');
+    article.className = "fadein";
+    let img = document.createElement('img');
+    img.setAttribute("src", src);
+    img.setAttribute("alt", alt);
+    let h1 = document.createElement('h1');
+    h1.innerText = title;
+    let h2 = document.createElement('h2');
+    if(subTitle){
+        h2.innerText = subTitle;
+    }
+    let p = document.createElement('p');
+    p.innerText = desc;
+
+    this.appendChild(article)
+    article.appendChild(img);
+    article.appendChild(h1);
+    article.appendChild(h2);
+    article.appendChild(p);
+    }
+    }
+
+    customElements.define("business-article", businessArticle);
+</script>
+
 
 <main class="home-content-wrap">
     <section class="home-section">
@@ -141,6 +176,28 @@
                     data-title="실시간 TRACKING" 
                     data-desc="화물 위치를 실시간으로 간편하게 TRACKING 할 수 있는 선진 물류 서비스 제공">
                 </business-article>
+                <!-- <article class="fadein">
+                    <img src="{% static 'img/business1.png' %}" alt="business_FCL">
+                    <h1>FCL</h1>
+                    <h2>(FULL CONTAINER LOAD)</h2>
+                    <p>다양한 선사와의 강력한 파트너십을 통해 유연하고 신속한 해상 FCL 서비스 제공</p>
+                </article>
+                <article class="fadein">
+                    <img src="{% static 'img/business2.png' %}" alt="business_LCL">
+                    <h1>FCL</h1>
+                    <h2>(LESS THAN CONTAINER LOAD)</h2>
+                    <p>해외 파트너십이 아닌 GLS Family 내 지사간 CONSOLIDATION 을 통해 Origin / Destination 에서의 유연한 대응으로 타 콘솔사와 차별화 된 서비스 제공</p>
+                </article>
+                <article class="fadein">
+                    <img src="{% static 'img/business3.png' %}" alt="GLS logo">
+                    <h1>DOOR TO DOOR 서비스</h1>
+                    <p>해외 지사를 통해 선적지부터 최종 목적지까지 포장, 운송, 통관 서류작성 등 종합 물류 대행 서비스 제공</p>
+                </article>
+                <article class="fadein">
+                    <img src="{% static 'img/business4.png' %}" alt="GLS logo">
+                    <h1>실시간 TRACKING</h1>
+                    <p>화물 위치를 실시간으로 간편하게 TRACKING 할 수 있는 선진 물류 서비스 제공</p>
+                </article> -->
             </div>
         </div>
     </section>
@@ -167,6 +224,22 @@
                 data-title="시간 화물 TRACKIN" 
                 data-desc="화물 위치를 실시간으로 간편하게 TRACKING 할 수 있는 선진 물류 서비스 제공">
             </business-article>
+        </div>
+            <!-- <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>적시운송 서비스</h1>
+                <p>다양한 항공사와의 강력한 파트너십을 통해 유연하고 신속한 항공 서비스 제공</p>
+            </article>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>DOOR TO DOOR 서비스</h1>
+                <p>해외 지사를 통해 선적지부터 최종 목적지까지 포장,운송, 통관및 모든 종합물류 제반업무 서비스 제공</p>
+            </article>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>실시간 화물 TRACKING</h1>
+                <p>화물 위치를 실시간으로 간편하게 TRACKING 할 수 있는 선진 물류 서비스 제공</p>
+            </article> -->
         </div>
     </section>
     <section class="home-section">
@@ -198,22 +271,40 @@
                     data-desc="프로젝트 화물 전문 인재, 국내와 현지 근무로 완벽한 선적, 하역">
                 </business-article>
             </div>
+            <!-- <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>믿을 수 있는 안전 운송</h1>
+                <p>화물의 타입에 따라 최적의 선복 및 화물의 타입에 맞는 최적의 선박 확보를 통한 적기와 안전운송</p>
+            </article>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>체계적인 원라인 시스템</h1>
+                <p>사전 Survey, Route 발굴, 장애물 조사, 운송 Simulation, 특수차량 수배 등 현지 내륙운송</p>
+            </article>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>GLS만의 운송 노하우</h1>
+                <p>공사에 투입되는 각종 기계, 설비, 자재 등에 대한 운송 노하우 확보</p>
+            </article>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>국내 및 로컬 최상의 서비스</h1>
+                <p>프로젝트 화물 전문 인재, 국내와 현지 근무로 완벽한 선적, 하역</p>
+            </article> -->
         </div>
     </section>
     <section class="home-section">
         <div class="section-content">
-            <div class="title-wrap">
+            <div>
                 <img src="{% static 'img/GLS-logo-white1.png' %}" alt="GLS logo">
-                <div><span class="section-title-en">CONSOL</span></div>
-                <div><span class="section-title-kr">콘솔 업무</span></div>
+                <div><span>CONSOL</span></div>
+                <div><span>콘솔 업무</span></div>
             </div>
-            <div class="business-wrap">
-                <business-article 
-                    src="{% static 'img/business_air.png' %}" 
-                    data-title="GLS 그룹의 프리미엄 서비스" 
-                    data-desc="해외 파트너십이 아닌 GLS Family 내 지사간 CONSOLIDATION 을 통해 Origin / Destination 에서의 유연한 대응으로 타 콘솔사와 차별화 된 서비스 제공">
-                </business-article>
-            </div>
+            <article>
+                <img src="{% static 'img/business_air.png' %}" alt="business_FCL">
+                <h1>GLS 그룹의 프리미엄 서비스</h1>
+                <p>해외 파트너십이 아닌 GLS Family 내 지사간 CONSOLIDATION 을 통해 Origin / Destination 에서의 유연한 대응으로 타 콘솔사와 차별화 된 서비스 제공</p>
+            </article>
         </div>
     </section>
     <section class="home-section">
@@ -221,5 +312,6 @@
     
         </div>
     </section>
+
 </main>
 {% endblock content %}
