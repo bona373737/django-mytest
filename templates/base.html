@@ -28,7 +28,7 @@
 <body> 
     {% if request.path == "/accounts/signin/" or request.path == "/accounts/signup/" %}
     {% else %} 
-        {% include 'nav.html' %}
+        {% include 'header.html' %}
     {% endif %}
 
     {% block content %}
