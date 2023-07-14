@@ -1,0 +1,14 @@
+@import "./colors";
+
+a{
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+    font-weight: bolder;
+    &:hover{
+        color: $yellow;
+    }
+    .link-active{
+        color: $yellow;
+    }
+}

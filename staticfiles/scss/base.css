@@ -1,10 +1,10 @@
+a { text-decoration: none; color: #181828; cursor: pointer; font-weight: bolder; }
+
+a:hover { color: #FFCC00; }
+
+a .link-active { color: #FFCC00; }
+
 body { font-family: 'Gothic A1', sans-serif; box-sizing: border-box; }
-
-body a { text-decoration: none; color: #5cc2d0; }
-
-body a:hover { color: #005293; }
-
-body a:active { color: #005293; }
 
 header#gnv { box-sizing: border-box; border-bottom: 2px solid #FFCC00; background-color: white; position: fixed; width: 100vw; top: 0; z-index: 999; }
 
@@ -16,11 +16,15 @@ header#gnv .topbar .topbar-content-wrap .flag-wrap { height: 40px; display: flex
 
 header#gnv .topbar .topbar-content-wrap .flag-wrap img { margin: 0 5px; width: 30px; }
 
-header#gnv .navbar .navbar-content-wrap { width: 1212px; margin: auto; }
+header#gnv .navbar .navbar-content-wrap { width: 1212px; height: 80px; box-sizing: border-box; margin: auto; }
 
-header#gnv .navbar .navbar-content-wrap nav { width: 100%; height: 70px; display: flex; justify-content: space-between; align-items: center; }
+header#gnv .navbar .navbar-content-wrap nav { width: 100%; height: 100%; display: flex; justify-content: space-between; align-items: center; }
 
-header#gnv .navbar .navbar-content-wrap nav .manu-wrap { width: 480px; display: flex; justify-content: space-between; }
+header#gnv .navbar .navbar-content-wrap nav .menu-wrap ul { width: 480px; display: flex; justify-content: space-between; }
+
+header#gnv .navbar .navbar-content-wrap nav .menu-wrap ul .navbar-submenu { display: none; }
+
+header#gnv .navbar .navbar-content-wrap nav .menu-wrap ul .navbar-menu-active { color: #FFCC00; }
 
 footer { background-color: #181828; }
 

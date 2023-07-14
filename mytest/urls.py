@@ -22,5 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("apps.home.urls")),
     path("accounts/", include("apps.accounts.urls")),
+    path("corpinfo/", include("apps.corpinfo.urls")),
+    path("service/", include("apps.service.urls")),
+    path("qna/", include("apps.qna.urls")),
+    path("consolebus/", include("apps.consolebus.urls")),
 
 ]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

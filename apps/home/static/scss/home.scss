@@ -10,6 +10,7 @@ main.home-content-wrap{
             margin: auto;
         }
     }
+    //slider
     section.home-section:first-child{
         .section-content{
             width:100%;
@@ -64,7 +65,7 @@ main.home-content-wrap{
                 position: absolute;
                 top:50%;
                 left:50%;
-                transform: translate(-50%, -40%);
+                transform: translate(-50%, -50%);
                 z-index:99;
                 .swiper-text-contents{
                     display: flex;
@@ -112,7 +113,7 @@ main.home-content-wrap{
             }
             p{
                 color: white;
-                line-height:0.3em;
+                line-height:1.5em;
             }
         }
     }

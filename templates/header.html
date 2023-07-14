@@ -1,14 +1,16 @@
 {% load static %}
 
+<script defer src="{% static 'js/header.js' %}"></script>
+
 <header id="gnv">
     <section class="topbar">
         <div class="topbar-content-wrap">
             <div class="flag-wrap">
-                <img src="{% static 'img/usa.png' %}" alt="">
-                <img src="{% static 'img/usa.png' %}" alt="">
-                <img src="{% static 'img/usa.png' %}" alt="">
-                <img src="{% static 'img/usa.png' %}" alt="">
-                <img src="{% static 'img/usa.png' %}" alt="">
+                <img src="{% static 'img/flag/vietnam.png' %}" alt="">
+                <img src="{% static 'img/flag/japan.png' %}" alt="">
+                <img src="{% static 'img/flag/hongkong.png' %}" alt="">
+                <img src="{% static 'img/flag/china.png' %}" alt="">
+                <img src="{% static 'img/flag/usa.png' %}" alt="">
             </div>
         </div>
     </section>
@@ -20,17 +22,34 @@
                         <img src="{% static 'img/GLS-logo-2.png' %}" alt="">
                 </a>
             </div>
-            <div class="manu-wrap">
-                <div><a>회사소개</a></div>
-                <div><a>서비스</a></div>
-                <div><a>E-TRACKING</a></div>
-                <div><a>문의하기</a></div>
-                <div><a>CONSOL BUS</a></div>
+            <div class="menu-wrap">
+                <ul>
+                    <li>
+                        <a href="{% url 'corpinfo' %}" class="navbar-menu-item">회사소개</a>
+                        <ul class="navbar-submenu">
+                            <li><a href="" >개요</a></li>
+                            <li><a href="" >GLS Family</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{% url 'service' %}" class="navbar-menu-item">서비스</a>   
+                    </li>
+                    <li>
+                        <a href="" class="navbar-menu-item">E-TRACKING</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'qna' %}" class="navbar-menu-item">문의하기</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'consolebus' %}" class="navbar-menu-item">CONSOL BUS</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
     </section>
 </header>
+
 <!-- <header id="gnv-mobile">
     모바일버전_nav
     <div id="logo-feg">

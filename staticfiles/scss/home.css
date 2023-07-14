@@ -22,7 +22,7 @@ main.home-content-wrap section.home-section:first-child .section-content .slider
 
 main.home-content-wrap section.home-section:first-child .section-content .slider-arrow img { width: 50px; height: 50px; }
 
-main.home-content-wrap section.home-section:first-child .section-content .swiper-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -40%); z-index: 99; }
+main.home-content-wrap section.home-section:first-child .section-content .swiper-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99; }
 
 main.home-content-wrap section.home-section:first-child .section-content .swiper-text .swiper-text-contents { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
@@ -40,7 +40,7 @@ main.home-content-wrap section.home-section:nth-child(2) .section-content img { 
 
 main.home-content-wrap section.home-section:nth-child(2) .section-content h1 { color: #FFCC00; font-weight: bolder; letter-spacing: 0.2em; padding-bottom: 40px; }
 
-main.home-content-wrap section.home-section:nth-child(2) .section-content p { color: white; line-height: 0.3em; }
+main.home-content-wrap section.home-section:nth-child(2) .section-content p { color: white; line-height: 1.5em; }
 
 main.home-content-wrap section.home-section:nth-child(3) { background-color: #181828; }
 

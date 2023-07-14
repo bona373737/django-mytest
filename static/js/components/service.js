@@ -1,5 +1,8 @@
-class businessArticle extends HTMLElement {
+// window.addEventListener("DOMContentLoaded", (event) => {
+//     customElements.define("business-article", businessArticle);    
+// });
 
+class businessArticle extends HTMLElement {
     connectedCallback() {
     let src = this.getAttribute('src');
     let alt = this.getAttribute('alt');
@@ -27,6 +30,7 @@ class businessArticle extends HTMLElement {
     article.appendChild(h2);
     article.appendChild(p);
     }
-    }
-    customElements.define("business-article", businessArticle);
+}
+
+customElements.define("business-article", businessArticle);    
 

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+{% block content %}
+<link rel="stylesheet" href="{% sass_src 'scss/service.scss' %}" />
+
+<div class="service-container">
+    <div class="service-contents">
+        <section class="service-content-top">
+            <div class="service-content-top-text" >
+                <h1>GLOBAL LOGISTICS SQUARE</h1>
+                <div class="text-wrap">
+                    <span>WE`RE</span>
+                    <div class="img-wrap">
+                        <img src="{% static 'img/logo/GLS-logo-white2.png' %}" alt="GLS-logo"/>
+                    </div>
+                </div>
+                <p>국제복합운송과 NVOCC의 글로벌리더로서 꾸준하게 성장하고있는 GLS를 소개합니다.</p>
+            </div>
+        </section>
+        <section class="service-content-main">
+            <div class="service-bg2">
+                <img src="{% static 'img/corpinfo_bg2.jpg' %}">
+            </div>
+            <div class="service-bg1">
+                <h1>GLOBAL LOGISTICS SQUARE</h1>
+                <h1>고객과 함께 성장합니다.</h1>
+                <img src="{% static 'img/corpinfo_bg1.png' %}">
+            </div>
+            <div class="service-bg3">
+                <img src="{% static 'img/corpinfo_bg3.jpg' %}">
+            </div>
+
+            
+        </section>
+    </div>
+</div>
+
+{% endblock content %}
