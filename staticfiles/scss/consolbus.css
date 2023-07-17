@@ -1,0 +1,21 @@
+.consolbus-container { margin-top: 120px; width: 100%; }
+
+.consolbus-container .contents-wrap .content-top { background: url(../img/consol_bg1.jpg) center no-repeat; background-size: cover; width: 100%; height: 500px; }
+
+.consolbus-container .contents-wrap .content-top .content-top-text { height: 100%; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.consolbus-container .contents-wrap .content-top .content-top-text h1 { color: #FFCC00; background-color: transparent; border: 1px solid #FFCC00; }
+
+.consolbus-container .contents-wrap .content-main { width: 100%; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.consolbus-container .contents-wrap .content-main .consolbus-btn-wrap button { padding: 20px 40px; background-color: transparent; border: 2px solid #036a91; border-radius: 30px; color: #036a91; cursor: pointer; }
+
+.consolbus-container .contents-wrap .content-main .consolbus-btn-wrap .clickedBtn { background-color: #036a91; color: white; }
+
+.consolbus-container .contents-wrap .content-main .consolbus-info-wrap { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.consolbus-container .contents-wrap .content-main .consolbus-info-wrap .consolbus-info { display: none; }
+
+.consolbus-container .contents-wrap .content-main .consolbus-info-wrap .consolbus-info:first-child { display: block; }
+
+/*# sourceMappingURL=consolbus.css.map */

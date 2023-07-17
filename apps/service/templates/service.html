@@ -4,35 +4,51 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% sass_src 'scss/service.scss' %}" />
+<script defer src="{% static 'js/service.js' %}"></script>
+<script defer src="{% static 'js/utils/fadeObserver.js' %}"></script>
+<script defer src="{% static 'js/components/business.js' %}"></script>
 
 <div class="service-container">
-    <div class="service-contents">
-        <section class="service-content-top">
-            <div class="service-content-top-text" >
+    <div class="contents-wrap">
+        <section class="content-top">
+            <div class="content-top-text" >
                 <h1>GLOBAL LOGISTICS SQUARE</h1>
                 <div class="text-wrap">
-                    <span>WE`RE</span>
-                    <div class="img-wrap">
-                        <img src="{% static 'img/logo/GLS-logo-white2.png' %}" alt="GLS-logo"/>
-                    </div>
+                    <span>OUR</span>
+                    <span>SERVICES</span>
                 </div>
-                <p>국제복합운송과 NVOCC의 글로벌리더로서 꾸준하게 성장하고있는 GLS를 소개합니다.</p>
+                <p>국제복합운송과 NVOCC의 글로벌리더로서 꾸준하게 성장하고있는 GLS의 차별화된 서비스를 경험하세요</p>
             </div>
         </section>
-        <section class="service-content-main">
-            <div class="service-bg2">
-                <img src="{% static 'img/corpinfo_bg2.jpg' %}">
+        <section class="content-main">
+            <div class="main-title">
+                <img src="{% static 'img/logo/GLS-logo.png' %}" alt="GLS-logo"/>
+                <p>오늘날 운송과 물류 산업의 획기적인 변화가 거듭되고 있음에 따라,</p>
+                <p>GLS는 변화에 민감하고 빠르게 대응하여 고객사들에게 정확하고 빠른 최고의 서비스를 제공하는데 최선을 다 하고 있습니다.</p>
             </div>
-            <div class="service-bg1">
-                <h1>GLOBAL LOGISTICS SQUARE</h1>
-                <h1>고객과 함께 성장합니다.</h1>
-                <img src="{% static 'img/corpinfo_bg1.png' %}">
+        </section>
+        <section class="tap-container">
+            <div class="tab-btn-wrap">
+                <button data-tab="sea">해상운송</button>
+                <button data-tab="air" >항공운송</button>
+                <button data-tab="bulk" >벌크카고</button>
+                <button data-tab="console" >콘솔업무</button>
             </div>
-            <div class="service-bg3">
-                <img src="{% static 'img/corpinfo_bg3.jpg' %}">
+            <div class="tab-content-wrap">
+                <div class="tab-content" data-tab="sea">
+                    {% include 'includes/sea.html' %}
+                </div>
+                <div class="tab-content" data-tab="air">
+                    {% include 'includes/air.html' %}
+                </div>
+                <div class="tab-content" data-tab="bulk">
+                    {% include 'includes/bulk.html' %}
+                </div>
+                <div class="tab-content" data-tab="console">
+                    {% include 'includes/console.html' %}
+                </div>
+     
             </div>
-
-            
         </section>
     </div>
 </div>

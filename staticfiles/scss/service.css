@@ -1,23 +1,29 @@
 .service-container { margin-top: 120px; width: 100%; }
 
-.service-container .service-contents .service-content-top { background: url(../img/corpinfo_bg4.jpg) center no-repeat; background-size: cover; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.service-container .contents-wrap .content-top { background: url(../img/service-bg1.jpg) center no-repeat; background-size: cover; width: 100%; height: 500px; }
 
-.service-container .service-contents .service-content-top .service-content-top-text { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.service-container .contents-wrap .content-top .content-top-text { height: 100%; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.service-container .service-contents .service-content-top .service-content-top-text .text-wrap { display: flex; }
+.service-container .contents-wrap .content-top .content-top-text h1 { color: #FFCC00; background-color: transparent; border: 1px solid #FFCC00; }
 
-.service-container .service-contents .service-content-top .service-content-top-text .text-wrap h1 { color: #FFCC00; }
+.service-container .contents-wrap .content-main .main-title { width: 100%; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.service-container .service-contents .service-content-top .service-content-top-text .text-wrap .img-wrap { width: 200px; height: 100px; }
+.service-container .contents-wrap .tap-container .tab-btn-wrap { width: 100%; display: flex; justify-content: center; }
 
-.service-container .service-contents .service-content-top .service-content-top-text .text-wrap img { width: 100%; object-fit: cover; }
+.service-container .contents-wrap .tap-container .tab-btn-wrap button { margin: 0 1px; padding: 20px; background-color: #f0f3f2; border: 0.5px solid gainsboro; border-bottom: none; cursor: pointer; }
 
-.service-container .service-contents .service-content-main { width: 100%; display: relative; }
+.service-container .contents-wrap .tap-container .tab-btn-wrap button:hover { background-color: gainsboro; }
 
-.service-container .service-contents .service-content-main .service-bg2 { width: 100%; height: 400px; display: relative; top: 0; left: 90px; }
+.service-container .contents-wrap .tap-container .tab-content-wrap { width: 100%; height: 600px; padding: 30px 0; background-color: #f0f3f2; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
-.service-container .service-contents .service-content-main .service-bg1 { width: 1212px; height: 400px; position: absolute; left: 50%; z-index: 1; }
+.service-container .contents-wrap .tap-container .tab-content-wrap .tab-content { display: none; }
 
-.service-container .service-contents .service-content-main .service-bg3 { height: 800px img; height-width: 100%; height-height: 100%; height-object-fit: cover; }
+.service-container .contents-wrap .tap-container .tab-content-wrap .tab-content .tab-title { width: 100%; }
+
+.service-container .contents-wrap .tap-container .tab-content-wrap .tab-content .service-wrap { background: url(../img//service-bg1.jpg) no-repeat center; margin: auto; width: 1212px; height: 500px; display: flex; justify-content: center; align-items: center; text-align: center; }
+
+.service-container .contents-wrap .tap-container .tab-content-wrap .tab-content .service-wrap business-article article { width: 300px; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; }
+
+.service-container .contents-wrap .tap-container .tab-content-wrap .tab-content:first-child { display: block; }
 
 /*# sourceMappingURL=service.css.map */

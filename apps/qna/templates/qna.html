@@ -3,10 +3,180 @@
 {% load sass_tags %}
 
 {% block content %}
-    <div class="consolebus-container">
-        <div class="consolebus-contents">
-            qna
-        </div>
-    </div>
+<link rel="stylesheet" href="{% sass_src 'scss/qna.scss' %}" />
 
+<div class="qna-container">
+    <div class="contents-wrap">
+        <section class="content-top">
+            <div class="content-top-text" >
+                <h1>GLOBAL LOGISTICS SQUARE</h1>
+                <h2>YOU CAN REACH US</h2>
+                <p>글로벌 네트워크와 실시간 시스템으로 제공하는 GLS의 프리미엄 서비스를 지금 이용해보세요.</p>
+            </div>
+        </section>
+        <section class="content-main">
+            <div>
+                <div class="user-info">
+                    <h1>고객정보</h1>
+                    <div class="userinfo-row">
+                        <div class="input-wrap">
+                            <label>회사명</label>                        
+                            <input type="text" name="company" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="input-wrap">
+                            <label>회사연락처</label>                        
+                            <input type="text" name="" id="">
+                            <div class="error-msg"></div>
+                        </div>
+                    </div>
+                    <div class="userinfo-row">
+                        <div class="input-wrap">
+                            <label>담당자</label>                        
+                            <input type="text" name="" id="">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="input-wrap">
+                            <label>연락처</label>                        
+                            <input type="text" name="phoneNum" id="phoneNum">
+                            <div class="error-msg"></div>
+                        </div>
+                    </div>
+                    <div class="userinfo-row">
+                        <div class="input-wrap">
+                            <label>주소</label>                        
+                            <input type="text" name="address" id="address">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="input-wrap">
+                            <label>이메일</label>                        
+                            <input type="text" name="email" id="email">
+                            <div class="error-msg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cargo-info">
+                    <h1>화물 정보</h1>
+                    <div class="input-wrap radio-wrap">
+                        <label>분류</label>                        
+                        <input type="radio" id="company">수출
+                        <input type="radio" id="company">수입
+                    </div>
+                    <div class="input-wrap radio-wrap">
+                        <label>선적조건</label>   
+                        <input type="radio" id="company">LCL(소형화물)
+                        <input type="radio" id="company">FCL(컨테이너)
+                        <input type="radio" id="company">AIR(항공화물)
+                        <input type="radio" id="company">BULK(벌크)
+                    </div>
+                    <div class="input-wrap radio-wrap">
+                        <label>선적조건</label>   
+                        <input type="radio" id="company">CFR
+                        <input type="radio" id="company">CIF
+                        <input type="radio" id="company">FOB
+                        <input type="radio" id="company">EXW
+                        <input type="radio" id="company">DDU(DAP)
+                        <input type="radio" id="company">기타       
+                    </div>
+                    <p>(Door To Door 운송료 문의시 화물의 픽업지,도착지 주소를 기타란에 상세기재 부탁드립니다.)</p>
+                    <div class="input-wrap">
+                        <label>예상선적일</label>                        
+                        <input type="date" id="company">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <label>Port of Shipment</label>
+                        <div>
+                            <label>포트</label>                        
+                            <input type="text" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div>
+                            <label>국가</label>                        
+                            <input type="text" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label>도착지</label>
+                        <div>
+                            <label>포트</label>                        
+                            <input type="text" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div>
+                            <label>국가</label>                        
+                            <input type="text" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <label>제품명</label>                        
+                        <input type="text" id="company">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <label>HS CODE(세번부호)</label>                        
+                        <input type="text" id="company">
+                        <div class="error-msg"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <label>물품가격</label>
+                        <div>
+                            <label>Price</label>                        
+                            <input type="text" id="company">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div>
+                            <label>Currency</label>                        
+                            <select>
+                                <option value="">USD</option>
+                                <option value="">EUR</option>
+                                <option value="">YEN</option>
+                                <option value="">KRW</option>
+                                <option value="">AUD</option>
+                                <option value="">CNY</option>
+                                <option value="">ETC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-wrap radio-wrap">
+                        <label>추가 의뢰사항</label>   
+                        <input type="radio" id="company">수출통관
+                        <input type="radio" id="company">국내운송
+                        <input type="radio" id="company">보험부보
+                        <input type="radio" id="company">포장
+                        <input type="radio" id="company">보관
+                    </div>
+                    <div class="input-wrap">
+                        <label>분류</label>                        
+                        <select>
+                            <option value="">해상</option>
+                            <option value="">항공</option>
+                            <option value="">벌크</option>
+                            <option value="">기타</option>
+                        </select>
+                    </div>
+                    <div class="input-wrap">
+                        <label>제목</label>                        
+                        <input type="text" id="company">
+                    </div>
+                    <div class="input-wrap">
+                        <label>내용</label>                        
+                        <textarea></textarea>
+                    </div>
+                    <div class="input-wrap">
+                        <label>첨부파일1</label>                        
+                        <input type="file">
+                    </div>
+                    <div class="input-wrap">
+                        <label>첨부파일2</label>                        
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
 {% endblock content %}

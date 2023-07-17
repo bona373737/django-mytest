@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'sass_processor',
     'apps.accounts',
     'apps.home',
-    'apps.consolebus',
+    'apps.consolbus',
     'apps.service',
     'apps.qna',
     'apps.corpinfo'
@@ -143,7 +143,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'apps','corpinfo','static'),
     os.path.join(BASE_DIR,'apps','service','static'),
     os.path.join(BASE_DIR,'apps','qna','static'),
-    os.path.join(BASE_DIR,'apps','consolebus','static'),
+    os.path.join(BASE_DIR,'apps','consolbus','static'),
 ]
 
 # SCSS 설정

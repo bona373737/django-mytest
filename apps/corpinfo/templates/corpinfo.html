@@ -3,10 +3,85 @@
 {% load sass_tags %}
 
 {% block content %}
-    <div class="consolebus-container">
-        <div class="consolebus-contents">
-            corpinfo
-        </div>
+<link rel="stylesheet" href="{% sass_src 'scss/corpinfo.scss' %}" />
+<script defer src="{% static 'js/utils/fadeObserver.js' %}"></script>
+
+<div class="corpinfo-container">
+    <div class="corpinfo-contents">
+        <section class="corpinfo-content-top">
+            <div class="service-content-top-text" >
+                <h1>GLOBAL LOGISTICS SQUARE</h1>
+                <div class="text-wrap">
+                    <span>WE`RE</span>
+                    <div class="img-wrap">
+                        <img src="{% static 'img/logo/GLS-logo-white2.png' %}" alt="GLS-logo"/>
+                    </div>
+                </div>
+                <p>국제복합운송과 NVOCC의 글로벌리더로서 꾸준하게 성장하고있는 GLS를 소개합니다.</p>
+            </div>
+        </section>
+        <section class="service-content-main">
+            <div class="service-bg1">
+                <div>
+                    <h1>GLOBAL LOGISTICS SQUARE</h1>
+                    <h1>고객과 함께 성장합니다.</h1>
+                </div>
+                <img src="{% static 'img/corpinfo_bg1.png' %}">
+            </div>
+            <div class="service-bg2">
+                <img src="{% static 'img/corpinfo_bg2.jpg' %}">
+            </div>
+            <div class="service-bg3">
+                <img src="{% static 'img/corpinfo_bg3.jpg' %}">
+                <div class="service-info">
+                    <div>
+                        <img src="{% static 'img/logo/GLS-logo-white2.png' %}" alt="GLS-logo"/>
+                        <p class="fadein">THE NEXT LEADER<br/> 
+                            OF GLOBAL<br/>
+                            LOGISTICS<br/>
+                            INDUSTRY
+                        </p>
+                        <button>회사 소개서 다운로드</button>
+                    </div>
+                    <div class="fadein">
+                        <h1>저희 GLS는</h1>
+                        <p>홍콩, 베트남 호치민, 하이퐁, 하노이, 중국 상해,<br/>
+                            일본 도쿄 지역에 현지 지사를 두고 있으며,<br/>
+                            전 세계 주요 항구의 파트너들과 함께 하고 있습니다.<br/>
+                            오늘날 운송과 물류 산업의 획기적인 변화가 거듭되고 있음에 따라,<br/>
+                            GLS는 변화에 민감하고 빠르게 대응하여<br/>
+                            고객사들에게 정확하고 빠른 최고의 서비스를 제공하는데<br/>
+                            최선을 다 하고 있습니다.<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="contact-container">
+            <article>
+                <img src="{% static 'img/logo/GLS-logo-yellow.png' %}" alt="GLS-logo"/>
+
+            </article>
+            <article class="address">
+                <h1><span>OUR</span>ADDRESS</h1>
+                <h2>본사위치</h2>
+                <p>인천광역시 서해대로 210번길 45 301호</p>
+                <p>#301, 45 210beongil, Seohaedaero, Incheon, Rep. of Korea</p>
+            </article>
+            <article class="contact">
+                <h1><span>OUR</span>CONTACT</h1>
+                <p>Tel: +82) 02 – 3775 – 1180</p>
+                <p>Fax: +82) 02 – 3775 – 1181</p>
+            </article>
+            <article class="hours">
+                <h1><span>OUR</span>HOURS</h1>
+                <p>Monday-Friday: 9:00 – 18:00</p>
+            </article>
+        </section>
+        <section class="map">
+
+        </section>
     </div>
+</div>
 
 {% endblock content %}

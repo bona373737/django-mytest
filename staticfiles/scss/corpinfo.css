@@ -1,0 +1,45 @@
+.corpinfo-container { margin-top: 120px; width: 100%; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top { background: url(../img/corpinfo_bg4.jpg) center no-repeat; background-size: cover; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top .service-content-top-text { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top .service-content-top-text .text-wrap { display: flex; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top .service-content-top-text .text-wrap h1 { color: #FFCC00; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top .service-content-top-text .text-wrap .img-wrap { width: 200px; height: 100px; }
+
+.corpinfo-container .corpinfo-contents .corpinfo-content-top .service-content-top-text .text-wrap img { width: 100%; object-fit: cover; }
+
+.corpinfo-container .corpinfo-contents .service-content-main { width: 100%; position: relative; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg1 { position: absolute; top: 180px; left: 50%; transform: translate(-50%, 0); z-index: 1; display: flex; flex-direction: column; align-items: center; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg1 div { margin-bottom: 30px; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg2 { width: 100%; height: 100px; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg2 img { width: 100%; height: 100%; object-fit: cover; position: relative; right: -45%; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg3 { box-sizing: border-box; width: 100%; height: 1600px; position: relative; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-bg3 img { width: 100%; height: 100%; object-fit: cover; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-info { width: 1212px; margin: auto; padding: 30px 0; display: flex; justify-content: space-between; align-items: end; position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0); color: white; }
+
+.corpinfo-container .corpinfo-contents .service-content-main .service-info button { background-color: transparent; border: 1px solid #FFCC00; color: #FFCC00; }
+
+.corpinfo-container .corpinfo-contents .contact-container { width: 100%; height: 400px; display: flex; justify-content: space-between; }
+
+.corpinfo-container .corpinfo-contents .contact-container article { width: 400px; height: auto; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+.corpinfo-container .corpinfo-contents .contact-container article:first-child { background: url("../img//corpinfo_bg5.jpg") no-repeat center; background-size: cover; display: flex; align-items: center; justify-content: center; }
+
+.corpinfo-container .corpinfo-contents .contact-container article:first-child img { width: 300px; }
+
+.corpinfo-container .corpinfo-contents .contact-container article:nth-child(odd) { background-color: #363545; }
+
+.corpinfo-container .corpinfo-contents .contact-container article:nth-child(even) { background-color: #242332; }
+
+/*# sourceMappingURL=corpinfo.css.map */

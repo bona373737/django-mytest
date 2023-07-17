@@ -25,6 +25,6 @@ urlpatterns = [
     path("corpinfo/", include("apps.corpinfo.urls")),
     path("service/", include("apps.service.urls")),
     path("qna/", include("apps.qna.urls")),
-    path("consolebus/", include("apps.consolebus.urls")),
+    path("consolbus/", include("apps.consolbus.urls")),
 
 ]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
