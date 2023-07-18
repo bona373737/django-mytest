@@ -1,10 +1,12 @@
-a { text-decoration: none; color: #181828; cursor: pointer; font-weight: bolder; }
+html { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 16px; }
 
-a:hover { color: #FFCC00; }
+html a { text-decoration: none; color: #181828; cursor: pointer; font-weight: bolder; }
 
-a .link-active { color: #FFCC00; }
+html a:hover { color: #FFCC00; }
 
-body { font-family: 'Gothic A1', sans-serif; box-sizing: border-box; }
+html a .link-active { color: #FFCC00; }
+
+body { box-sizing: border-box; font-family: inherit; }
 
 header#gnv { box-sizing: border-box; border-bottom: 2px solid #FFCC00; background-color: white; position: fixed; width: 100vw; top: 0; z-index: 999; }
 

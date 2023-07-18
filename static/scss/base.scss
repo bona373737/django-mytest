@@ -1,9 +1,8 @@
 @import "./globalstyles";
-@import "./colors";
 
 body{
-    font-family: 'Gothic A1', sans-serif;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 header#gnv{

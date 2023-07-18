@@ -1,14 +1,36 @@
-@import "./colors";
+$font-xs: 0.75rem;
+$font-sm: 0.875rem;
+$font-base: 1rem;
+$font-lg: 1.125rem;
+$font-xl: 2rem;
 
-a{
-    text-decoration: none;
-    color: $black;
-    cursor: pointer;
-    font-weight: bolder;
-    &:hover{
-        color: $yellow;
-    }
-    .link-active{
-        color: $yellow;
+$main-color : rgb(92,194,208);
+$highlit-color : rgb(0,82,147);
+$gray : rgb(240,243,242);
+$gray2 : rgb(247,247,247);
+$hover-gray: rgb(220,220,220);
+$yellow : #FFCC00;
+$black : rgb(24,24,40);
+$blue : rgb(39,72,139);
+$font-gray: rgb(95,114,127);
+$consol-main : rgb(3,106,145);
+
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    
+    a{
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+        font-weight: bolder;
+        &:hover{
+            color: $yellow;
+        }
+        .link-active{
+            color: $yellow;
+        }
     }
 }
+  
